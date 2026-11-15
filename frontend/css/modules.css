@@ -1,0 +1,430 @@
+
+/* =========================================
+   MODULES PAGE
+========================================= */
+
+.modules-page {
+    width: 100%;
+    min-height: 70vh;
+    padding: 60px 8%;
+    background: #F1F8F2;
+    color: #173B2D;
+}
+
+
+/* =========================================
+   MODULES HERO
+========================================= */
+
+.modules-hero {
+    max-width: 750px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.modules-label,
+.section-label {
+    display: inline-block;
+    color: #168451;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.modules-hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #173B2D;
+}
+
+.modules-hero p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: #68796E;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MODULES SECTION
+========================================= */
+
+.modules-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.modules-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.modules-section-heading h2 {
+    font-size: 26px;
+    color: #173B2D;
+    margin: 0;
+}
+
+.modules-count {
+    padding: 9px 16px;
+    border-radius: 30px;
+    background: #DCEFE1;
+    color: #07533F;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MODULE CARDS
+========================================= */
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.module-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 235px;
+    padding: 28px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.25s ease,
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.module-card:hover {
+    border-color: #168451;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(23, 59, 45, 0.08);
+}
+
+.module-card-top,
+.module-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.module-number {
+    color: #168451;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.module-arrow {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #EAF5EC;
+    color: #168451;
+    font-size: 18px;
+    transition: background 0.25s ease,
+                color 0.25s ease;
+}
+
+.module-card:hover .module-arrow {
+    background: #168451;
+    color: #FFFFFF;
+}
+
+.module-card-content {
+    margin: 28px 0;
+}
+
+.module-card-content h3 {
+    color: #173B2D;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.module-card-content p {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.module-card-bottom {
+    padding-top: 18px;
+    border-top: 1px solid #E4ECE5;
+}
+
+.module-card-bottom > span:first-child {
+    color: #68796E;
+    font-size: 13px;
+}
+
+.module-explore {
+    color: #168451;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MODULE DETAIL PAGE
+========================================= */
+
+.module-detail {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.module-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+    color: #68796E;
+    font-size: 14px;
+}
+
+.module-breadcrumb a {
+    color: #168451;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.module-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.current-page {
+    color: #68796E;
+}
+
+.module-detail-header {
+    padding: 45px;
+    margin-bottom: 45px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 16px;
+}
+
+.module-detail-header h1 {
+    color: #173B2D;
+    font-size: 36px;
+    line-height: 1.25;
+    margin: 0 0 15px;
+}
+
+.module-detail-header p {
+    max-width: 700px;
+    color: #68796E;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+.module-practical-count {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 30px;
+    background: #EAF5EC;
+    color: #07533F;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   MODULE TOPICS
+========================================= */
+
+.module-topics {
+    margin-bottom: 40px;
+}
+
+.module-topics h2 {
+    color: #173B2D;
+    font-size: 27px;
+    margin: 0 0 25px;
+}
+
+.module-topic-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.module-topic {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 65px;
+    padding: 16px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 10px;
+}
+
+.topic-number {
+    flex-shrink: 0;
+    color: #168451;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.topic-name {
+    color: #344C3D;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MODULE DETAIL BUTTONS
+========================================= */
+
+.module-detail-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.module-practicals-btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 8px;
+    background: #168451;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.25s ease;
+}
+
+.module-practicals-btn:hover {
+    background: #07533F;
+}
+
+.back-modules-link {
+    color: #168451;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.back-modules-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .modules-page {
+        padding: 45px 5%;
+    }
+
+    .modules-hero h1 {
+        font-size: 34px;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .module-detail-header {
+        padding: 30px;
+    }
+
+    .module-detail-header h1 {
+        font-size: 30px;
+    }
+
+    .module-topic-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .modules-page {
+        padding: 35px 5%;
+    }
+
+    .modules-hero {
+        margin-bottom: 40px;
+    }
+
+    .modules-hero h1 {
+        font-size: 29px;
+    }
+
+    .modules-hero p {
+        font-size: 14px;
+    }
+
+    .modules-section-heading {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .modules-section-heading h2 {
+        font-size: 21px;
+    }
+
+    .modules-count {
+        font-size: 11px;
+        padding: 8px 12px;
+        white-space: nowrap;
+    }
+
+    .module-card {
+        min-height: 220px;
+        padding: 22px;
+    }
+
+    .module-card-content h3 {
+        font-size: 19px;
+    }
+
+    .module-detail-header {
+        padding: 24px;
+    }
+
+    .module-detail-header h1 {
+        font-size: 26px;
+    }
+
+    .module-breadcrumb {
+        margin-bottom: 30px;
+    }
+
+    .module-topic {
+        padding: 14px;
+    }
+
+    .module-detail-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}

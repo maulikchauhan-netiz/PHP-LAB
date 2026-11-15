@@ -1,0 +1,740 @@
+
+/* =========================================
+   PHP.LAB - PRACTICAL DETAIL PAGES
+   Shared stylesheet for Practical 01–29
+========================================= */
+
+
+/* =========================================
+   1. GLOBAL PRACTICAL LAYOUT
+========================================= */
+
+.practical-detail-page,
+.practical-detail {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0 70px;
+    box-sizing: border-box;
+}
+
+.practical-detail *,
+.practical-detail-page * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   2. BREADCRUMB
+========================================= */
+
+.detail-breadcrumb,
+.breadcrumb {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto 35px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12px;
+    color: #98A69C;
+}
+
+.detail-breadcrumb a,
+.breadcrumb a {
+    color: #68796E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.detail-breadcrumb a:hover,
+.breadcrumb a:hover {
+    color: #168451;
+}
+
+.current-page {
+    color: #168451;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   3. PRACTICAL HEADER
+========================================= */
+
+.detail-header {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E4ECE5;
+}
+
+.detail-label {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+    color: #168451;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.detail-module {
+    background: #DCEFE1;
+    color: #07533F;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.detail-number {
+    color: #168451;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.detail-header h1 {
+    color: #173B2D;
+    font-size: 34px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    font-weight: 800;
+}
+
+.detail-header p {
+    color: #68796E;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0;
+}
+
+
+/* =========================================
+   4. PRACTICAL OVERVIEW
+========================================= */
+
+.detail-overview {
+    margin-top: 45px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 14px;
+}
+
+.overview-heading {
+    margin-bottom: 22px;
+}
+
+.overview-label {
+    color: #168451;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.overview-heading h2,
+.detail-overview h2 {
+    color: #173B2D;
+    font-size: 25px;
+    margin: 0 0 15px;
+}
+
+.overview-heading h2 {
+    margin-top: 8px;
+}
+
+.overview-content p,
+.detail-overview > p {
+    color: #68796E;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 25px;
+}
+
+.overview-content h3,
+.detail-overview h3 {
+    color: #173B2D;
+    font-size: 17px;
+    margin: 20px 0 14px;
+}
+
+.overview-content ul,
+.detail-overview ul {
+    padding-left: 22px;
+    margin: 0;
+}
+
+.overview-content li,
+.detail-overview li {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 2;
+    padding-left: 5px;
+}
+
+.detail-overview > p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   5. SOURCE CODE SECTION
+========================================= */
+
+.detail-code {
+    margin-top: 35px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 14px;
+}
+
+
+/* Code headings - supports both HTML structures */
+
+.code-heading,
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.code-heading h2,
+.section-heading h2 {
+    color: #173B2D;
+    font-size: 25px;
+    margin: 8px 0 0;
+}
+
+.code-heading p {
+    color: #68796E;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+/* Section label */
+
+.section-label {
+    display: block;
+    color: #168451;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+
+/* Copy button */
+
+.copy-code-btn {
+    padding: 11px 18px;
+    background: #168451;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.copy-code-btn:hover {
+    background: #07533F;
+}
+
+
+/* Code window - original Practical 01–03 structure */
+
+.code-window {
+    overflow: hidden;
+    background: #173B2D;
+    border-radius: 10px;
+}
+
+.code-window-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    color: #DCEFE1;
+    background: #102E23;
+    font-size: 13px;
+}
+
+.code-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.code-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #DCEFE1;
+}
+
+.code-window pre,
+.detail-code pre {
+    padding: 25px;
+    overflow-x: auto;
+    margin: 0;
+    background: #173B2D;
+    border-radius: 10px;
+}
+
+.code-window code,
+.detail-code pre code {
+    display: block;
+    color: #EAF5EC;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.9;
+    white-space: pre;
+    tab-size: 4;
+}
+
+
+/* Practical 04 source code structure */
+
+.detail-code > pre {
+    overflow: hidden;
+    padding: 0;
+}
+
+.detail-code > pre > code {
+    padding: 25px;
+    overflow-x: auto;
+}
+
+
+/* =========================================
+   6. EXPECTED OUTPUT SECTION
+========================================= */
+
+.detail-output {
+    margin-top: 35px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 14px;
+}
+
+
+/* Output headings */
+
+.output-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.output-heading h2,
+.detail-output > h2 {
+    color: #173B2D;
+    font-size: 25px;
+    margin: 0 0 18px;
+}
+
+.output-heading h2 {
+    margin-top: 8px;
+}
+
+.output-heading p {
+    color: #68796E;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+.output-status {
+    padding: 8px 12px;
+    background: #EAF5EC;
+    color: #168451;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* Output window */
+
+.output-window {
+    border: 1px solid #E4ECE5;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+
+/* Original output header */
+
+.output-window-top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 18px;
+    background: #F1F8F2;
+    color: #68796E;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Practical 04 output header */
+
+.output-header {
+    display: flex;
+    align-items: center;
+    padding: 13px 18px;
+    background: #F1F8F2;
+    color: #68796E;
+    border-bottom: 1px solid #E4ECE5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.output-indicator {
+    width: 9px;
+    height: 9px;
+    background: #168451;
+    border-radius: 50%;
+}
+
+
+/* Output content */
+
+.output-content {
+    padding: 28px 22px;
+    min-height: 90px;
+    color: #173B2D;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.output-content p {
+    margin: 0;
+}
+
+
+/* =========================================
+   7. PROGRAM EXPLANATION
+========================================= */
+
+.program-explanation {
+    margin-top: 55px;
+    padding-bottom: 40px;
+}
+
+.explanation-heading {
+    margin-bottom: 25px;
+}
+
+.explanation-heading h2,
+.program-explanation > h2 {
+    font-size: 28px;
+    color: #173B2D;
+    margin: 10px 0 20px;
+}
+
+.explanation-heading p {
+    color: #68796E;
+    font-size: 15px;
+}
+
+.explanation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.explanation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 22px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 12px;
+}
+
+.explanation-number {
+    min-width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCEFE1;
+    color: #07533F;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.explanation-item > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.explanation-item h3 {
+    color: #173B2D;
+    font-size: 17px;
+    margin: 0 0 8px;
+}
+
+.explanation-item p {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+.explanation-item p:last-child {
+    margin-bottom: 0;
+}
+
+.explanation-item code {
+    background: #EAF5EC;
+    color: #07533F;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   8. XAMPP INSTALLATION SECTION
+========================================= */
+
+.installation-section {
+    margin-top: 35px;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 14px;
+}
+
+.installation-heading {
+    margin-bottom: 28px;
+}
+
+.installation-heading h2 {
+    color: #173B2D;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.installation-heading p {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.installation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.installation-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px;
+    background: #F8FBF8;
+    border: 1px solid #E4ECE5;
+    border-radius: 12px;
+}
+
+.step-number {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #DCEFE1;
+    color: #07533F;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.step-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.step-content h3 {
+    color: #173B2D;
+    font-size: 17px;
+    margin: 8px 0 14px;
+}
+
+.step-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.step-content li {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 1.9;
+    padding-left: 5px;
+}
+
+.step-content p {
+    color: #68796E;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 14px;
+}
+
+.localhost-url {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px;
+    background: #173B2D;
+    color: #EAF5EC;
+    border-radius: 7px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   9. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .detail-header h1 {
+        font-size: 27px;
+    }
+
+    .detail-header p {
+        font-size: 14px;
+    }
+
+    .detail-overview,
+    .detail-code,
+    .detail-output,
+    .installation-section {
+        padding: 24px;
+    }
+
+    .explanation-item {
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .practical-detail-page,
+    .practical-detail {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .detail-breadcrumb,
+    .breadcrumb {
+        width: 92%;
+        font-size: 11px;
+        gap: 7px;
+    }
+
+    .code-heading,
+    .section-heading,
+    .output-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .copy-code-btn {
+        width: 100%;
+    }
+
+    .detail-code,
+    .detail-overview,
+    .detail-output,
+    .installation-section {
+        padding: 20px;
+    }
+
+    .code-window pre,
+    .detail-code pre > code {
+        padding: 18px;
+    }
+
+    .code-window code,
+    .detail-code pre code {
+        font-size: 12px;
+    }
+
+    .output-content {
+        padding: 20px 16px;
+        font-size: 13px;
+    }
+
+    .installation-step {
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .step-number {
+        min-width: 34px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .step-content h3 {
+        font-size: 15px;
+    }
+
+    .step-content li {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .detail-header h1 {
+        font-size: 23px;
+    }
+
+    .detail-label {
+        font-size: 11px;
+    }
+
+    .detail-breadcrumb,
+    .breadcrumb {
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .explanation-item {
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .explanation-heading h2,
+    .program-explanation > h2 {
+        font-size: 23px;
+    }
+
+}

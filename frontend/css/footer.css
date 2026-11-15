@@ -1,0 +1,188 @@
+
+/* =====================================
+   FOOTER SECTION
+===================================== */
+
+.footer-section {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 55px 20px 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #E4ECE5;
+}
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+    gap: 50px;
+
+    padding-bottom: 40px;
+}
+
+
+/* =====================================
+   BRAND COLUMN
+===================================== */
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 15px;
+}
+
+.footer-logo-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #07533F;
+    border-radius: 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.footer-logo h3 {
+    color: #173B2D;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-tagline {
+    color: #68796E;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+
+.footer-description {
+    max-width: 300px;
+    color: #68796E;
+    font-size: 13px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =====================================
+   FOOTER HEADINGS
+===================================== */
+
+.footer-links h4,
+.footer-learning h4 {
+    color: #173B2D;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0 18px;
+}
+
+
+/* =====================================
+   FOOTER LISTS
+===================================== */
+
+.footer-links ul,
+.footer-learning ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-learning li {
+    margin-bottom: 12px;
+}
+
+.footer-links a,
+.footer-learning a {
+    text-decoration: none;
+    color: #68796E;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+
+/* LINK HOVER */
+
+.footer-links a:hover,
+.footer-learning a:hover {
+    color: #168451;
+}
+
+
+/* =====================================
+   FOOTER BOTTOM
+===================================== */
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    border-top: 1px solid #E4ECE5;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom p {
+    color: #68796E;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-bottom span {
+    color: #168451;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   RESPONSIVE FOOTER
+===================================== */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .footer-section {
+        padding: 40px 18px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 15px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

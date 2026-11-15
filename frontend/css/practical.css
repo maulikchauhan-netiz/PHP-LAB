@@ -1,0 +1,641 @@
+
+/* =========================================
+   PRACTICAL PAGE - MAIN CONTAINER
+========================================= */
+
+.practicals-page {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+
+/* =========================================
+   PRACTICAL LISTING SECTION
+========================================= */
+
+.practical-listing {
+    max-width: 1200px;
+    width: 90%;
+    margin: 45px auto 0;
+    padding-bottom: 70px;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.listing-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.listing-label {
+    color: #168451;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.listing-heading h2 {
+    color: #173B2D;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.listing-heading p {
+    color: #68796E;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.listing-count {
+    color: #168451;
+    background-color: #DCEFE1;
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   PRACTICAL SEARCH SECTION
+========================================= */
+
+.practicals-search {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.search-heading {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    color: #168451;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.search-heading h1 {
+    color: #173B2D;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.search-heading p {
+    color: #68796E;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+
+.search-box {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #DCE8DE;
+    border-radius: 12px;
+
+    padding: 0 20px;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.search-box:focus-within {
+    border-color: #168451;
+    box-shadow: 0 0 0 3px rgba(22, 132, 81, 0.10);
+}
+
+.search-icon {
+    color: #168451;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.search-box input {
+    width: 100%;
+    height: 58px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: #173B2D;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #98A69C;
+}
+
+
+/* =========================================
+   PRACTICAL WORKSPACE
+========================================= */
+
+.practicals-workspace {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 32px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   MODULE SIDEBAR
+========================================= */
+
+.module-sidebar {
+    background-color: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 12px;
+    padding: 24px 18px;
+}
+
+
+/* SIDEBAR HEADING */
+
+.sidebar-heading {
+    padding: 0 5px 20px;
+    border-bottom: 1px solid #E4ECE5;
+}
+
+.sidebar-heading h3 {
+    color: #173B2D;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.sidebar-heading p {
+    color: #98A69C;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   MODULE LIST
+========================================= */
+
+.module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 18px;
+    width: 100%;
+}
+
+
+/* MODULE ITEM */
+
+.module-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 10px;
+
+    text-decoration: none;
+    color: #52645A;
+
+    border-radius: 8px;
+
+    transition: all 0.25s ease;
+}
+
+
+/* MODULE NAME AND ICON */
+
+.module-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.module-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #F1F8F2;
+    color: #168451;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* MODULE COUNT */
+
+.module-count {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-shrink: 0;
+    min-width: 26px;
+    box-sizing: border-box;
+
+    color: #68796E;
+    background-color: #F1F5F1;
+
+    padding: 5px 8px;
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ACTIVE MODULE
+========================================= */
+
+.module-item.active {
+    background-color: #EAF5EC;
+    color: #07533F;
+}
+
+.module-item.active .module-icon {
+    background-color: #168451;
+    color: #FFFFFF;
+}
+
+.module-item.active .module-count {
+    background-color: #DCEFE1;
+    color: #07533F;
+}
+
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.module-item:not(.active):hover {
+    background-color: #F5F9F5;
+    color: #07533F;
+}
+
+.module-item:not(.active):hover .module-icon {
+    background-color: #DCEFE1;
+}
+
+
+/* =========================================
+   PRACTICAL CONTENT AREA
+========================================= */
+
+.practical-content {
+    min-width: 0;
+}
+
+
+/* =========================================
+   PRACTICAL CONTENT HEADING
+========================================= */
+
+.content-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.content-label {
+    color: #168451;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.content-heading h2 {
+    color: #173B2D;
+    font-size: 24px;
+    margin-top: 9px;
+}
+
+.content-heading p {
+    color: #68796E;
+    font-size: 13px;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+.content-total {
+    color: #168451;
+    background: #DCEFE1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   PRACTICAL ITEMS
+========================================= */
+
+.practical-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* =========================================
+   PRACTICAL ROW
+========================================= */
+
+.practical-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 20px;
+
+    background: #FFFFFF;
+    border: 1px solid #E4ECE5;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition: all 0.25s ease;
+}
+
+.practical-row:hover {
+    border-color: #168451;
+    transform: translateX(4px);
+    box-shadow: 0 5px 18px rgba(23, 59, 45, 0.06);
+}
+
+
+/* =========================================
+   PRACTICAL NUMBER
+========================================= */
+
+.practical-number {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #EAF5EC;
+    color: #168451;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PRACTICAL INFORMATION
+========================================= */
+
+.practical-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.practical-info h3 {
+    color: #173B2D;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.practical-info p {
+    color: #68796E;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   PRACTICAL ARROW
+========================================= */
+
+.practical-arrow {
+    color: #168451;
+    font-size: 22px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.practical-row:hover .practical-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   SEARCH AND FILTER FUNCTIONALITY
+========================================= */
+
+.practical-content[hidden] {
+    display: none !important;
+}
+
+/* Keep all module content in the right column */
+
+.practicals-workspace > .practical-content {
+    grid-column: 2;
+}
+
+/* Hide practical rows during search */
+
+.practical-row[hidden] {
+    display: none !important;
+}
+
+/* No search results message */
+
+#noSearchResults {
+    text-align: center;
+    color: #68796E;
+    padding: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN - TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .practical-listing {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .practicals-workspace {
+        width: 90%;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    /* Reset desktop grid positioning */
+
+    .practicals-workspace > .practical-content {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .listing-heading {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .listing-heading h2 {
+        font-size: 25px;
+    }
+
+    .listing-count {
+        font-size: 11px;
+    }
+
+    .search-heading h1 {
+        font-size: 29px;
+    }
+
+    .search-heading p {
+        font-size: 14px;
+    }
+
+    .search-box {
+        min-height: 55px;
+        padding: 0 15px;
+    }
+
+    .search-box input {
+        height: 53px;
+        font-size: 13px;
+    }
+
+    .module-sidebar {
+        padding: 20px 15px;
+    }
+
+    .module-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .content-heading h2 {
+        font-size: 21px;
+    }
+
+    .practical-row {
+        padding: 16px;
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN - MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .practical-listing,
+    .practicals-workspace {
+        width: 92%;
+    }
+
+    .listing-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .listing-heading h2 {
+        font-size: 23px;
+    }
+
+    .search-heading h1 {
+        font-size: 26px;
+    }
+
+    .module-list {
+        grid-template-columns: 1fr;
+    }
+
+    .content-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .practical-row {
+        padding: 14px 12px;
+        gap: 10px;
+    }
+
+    .practical-number {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .practical-info h3 {
+        font-size: 13px;
+    }
+
+    .practical-info p {
+        font-size: 12px;
+    }
+
+    .practical-arrow {
+        font-size: 19px;
+    }
+
+}
