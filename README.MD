@@ -105,8 +105,6 @@ PHP.LAB contains 29 practical programs organized into five modules.
 - File upload and download
 - MVC architecture
 
-*Note: These topics describe the learning content of the practical programs. Database-related practicals are educational examples and do not mean that the PHP.LAB website itself requires a database.*
-
 ## 📁 Project Structure
 
 ```text
@@ -238,7 +236,7 @@ Possible improvements for future versions include:
 
 ## 👨‍💻 Author
 
-**[Your Name]**
+**[MAULIK CHAUHAN]**
 
 Diploma in Computer Engineering
 
